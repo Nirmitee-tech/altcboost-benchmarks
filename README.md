@@ -27,6 +27,8 @@ make benchmark-page PYTHON=python
 
 The dependency ranges in `requirements.txt` support installation and CI; they do not guarantee bit-for-bit historical results. `experiment/requirements-tested.txt` records the original local package versions. The pinned Kaggle image is recorded in each frozen `v8-study/*/job/kernel-metadata.json`. Use the frozen notebook and image for the closest hosted reproduction. Regenerating models with different packages can change scores and tie behavior.
 
+The clean publication copy passed 135 unit tests and 66 integration tests locally. The optional GitHub Actions template is `ci/tests.yml`; automatic test CI is not enabled in this release because the publishing CLI token lacks workflow scope. The Pages publication has its own deployment status.
+
 `make audit` verifies source/cohort hashes and executed-code snapshots, then recomputes accuracy, recall, precision and other descriptive metrics from aggregate counts. It requires no dataset download and does not train a model. `make benchmark-page` rebuilds the static site in `docs/` from those aggregate results. The tests use synthetic fixtures; the page integration test serves a localhost HTTP endpoint.
 
 To rerun a development benchmark after obtaining its dataset separately:
