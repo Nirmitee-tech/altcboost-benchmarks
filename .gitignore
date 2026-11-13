@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.DS_Store
+/data/
+*.zip
+*.pkl
+*.pickle
+*.joblib
+.env
+.env.*
+kaggle.json
+access_token
+*.pid
+*.log

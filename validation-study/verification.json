@@ -1,0 +1,85 @@
+{
+  "observed_utc": "2026-11-12T16:25:45.664250+00:00",
+  "datasets": [
+    {
+      "dataset": "baf_base",
+      "submitted_code_matches_readback": true,
+      "private": true,
+      "internet": false,
+      "kernel": "jitendra93266/altcboost-validation-baf-base-20261112/1",
+      "code_sha256": "5116c94d8daae406fb149c3d5252833974d30733a97b7f7940a771fdadba98c5",
+      "completed_kernel": "jitendra93266/altcboost-validation-baf-base-20261112/1",
+      "pinned_image_and_dataset_match": true,
+      "frozen_v6_source_matches_prior": true,
+      "source_and_cohort_hashes_match_discovery": true,
+      "baseline_search_counts_verified": true,
+      "selection_record_hash_verified": true,
+      "primary_v6_counts_match_prior": true,
+      "hosted_pytest_summaries": [
+        "7 passed in 5.51s",
+        "6 passed, 17 warnings in 8.25s"
+      ]
+    },
+    {
+      "dataset": "paysim",
+      "submitted_code_matches_readback": true,
+      "private": true,
+      "internet": false,
+      "kernel": "jitendra93266/altcboost-validation-paysim-20261112/1",
+      "code_sha256": "fd90b86ac77450a89bbd4115e9a902bf5ee6cd173c87a4960da5a3717589decb",
+      "frozen_algorithm_files_match_prior": true,
+      "source_and_cohort_hashes_match_prior": true,
+      "primary_v6_counts_match_all_prior_budgets": true,
+      "hosted_pytest_summaries": [
+        "7 passed in 5.25s",
+        "6 passed, 17 warnings in 7.92s"
+      ],
+      "completed_kernel": "jitendra93266/altcboost-validation-paysim-20261112/1",
+      "pinned_image_and_dataset_match": true,
+      "frozen_v6_source_matches_prior": true,
+      "source_and_cohort_hashes_match_discovery": true,
+      "baseline_search_counts_verified": true,
+      "selection_record_hash_verified": true,
+      "primary_v6_counts_match_prior": true
+    },
+    {
+      "dataset": "sparkov",
+      "submitted_code_matches_readback": true,
+      "private": true,
+      "internet": false,
+      "kernel": "jitendra93266/altcboost-validation-sparkov-20261112/1",
+      "code_sha256": "0cc590b5d9bac710527b38810b00152e55372d96090dce2198e4b4bba80a22d7",
+      "completed_kernel": "jitendra93266/altcboost-validation-sparkov-20261112/1",
+      "pinned_image_and_dataset_match": true,
+      "frozen_v6_source_matches_prior": true,
+      "source_and_cohort_hashes_match_discovery": true,
+      "baseline_search_counts_verified": true,
+      "selection_record_hash_verified": true,
+      "primary_v6_counts_match_prior": true,
+      "hosted_pytest_summaries": [
+        "7 passed in 6.96s",
+        "6 passed, 17 warnings in 11.29s"
+      ]
+    },
+    {
+      "dataset": "elliptic",
+      "submitted_code_matches_readback": true,
+      "private": true,
+      "internet": false,
+      "kernel": "jitendra93266/altcboost-validation-elliptic-20261112/1",
+      "code_sha256": "12c69cadd854768bbd56bba1f45755eba7ad2ace08ded691d415445572d7d505",
+      "completed_kernel": "jitendra93266/altcboost-validation-elliptic-20261112/1",
+      "pinned_image_and_dataset_match": true,
+      "frozen_v6_source_matches_prior": true,
+      "source_and_cohort_hashes_match_discovery": true,
+      "baseline_search_counts_verified": true,
+      "selection_record_hash_verified": true,
+      "primary_v6_counts_match_prior": null,
+      "hosted_pytest_summaries": [
+        "7 passed in 7.23s",
+        "6 passed, 17 warnings in 11.28s"
+      ],
+      "prior_comparison_status": "Not applicable: first real AML transfer measurement"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+[
+  {
+    "dataset": "paysim",
+    "reference": "CatBoost_native",
+    "alpha": 0.0005,
+    "cluster_scheme": "four_step_time_block",
+    "cluster_count": 28,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": -0.03514376996805113,
+    "observed_delta_fpr": 3.4008207314031804e-05,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      -0.045950155763239874,
+      -0.024920300360319794
+    ],
+    "delta_fpr_interval_95": [
+      -5.347272346075079e-05,
+      0.00015516153736754994
+    ]
+  },
+  {
+    "dataset": "paysim",
+    "reference": "XGBoost",
+    "alpha": 0.0005,
+    "cluster_scheme": "four_step_time_block",
+    "cluster_count": 28,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.006389776357827448,
+    "observed_delta_fpr": 9.06885528374181e-05,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      -0.010112048591126731,
+      0.023017082450772726
+    ],
+    "delta_fpr_interval_95": [
+      -1.3009263504289178e-05,
+      0.0001705233502820955
+    ]
+  },
+  {
+    "dataset": "paysim",
+    "reference": "LightGBM_native",
+    "alpha": 0.0005,
+    "cluster_scheme": "four_step_time_block",
+    "cluster_count": 28,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.2180511182108626,
+    "observed_delta_fpr": 0.0,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      0.19047619047619047,
+      0.2436122393444936
+    ],
+    "delta_fpr_interval_95": [
+      -0.0001275127848836451,
+      0.00011237434263898013
+    ]
+  },
+  {
+    "dataset": "paysim",
+    "reference": "CatBoost_native",
+    "alpha": 0.001,
+    "cluster_scheme": "four_step_time_block",
+    "cluster_count": 28,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.03194888178913735,
+    "observed_delta_fpr": 5.668034552338641e-05,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      0.020569360009993338,
+      0.044342967510519415
+    ],
+    "delta_fpr_interval_95": [
+      -0.00011584745999011966,
+      0.00014797007267725032
+    ]
+  },
+  {
+    "dataset": "paysim",
+    "reference": "XGBoost",
+    "alpha": 0.001,
+    "cluster_scheme": "four_step_time_block",
+    "cluster_count": 28,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.05031948881789139,
+    "observed_delta_fpr": 9.06885528374181e-05,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      0.03709428129829984,
+      0.0659781436076193
+    ],
+    "delta_fpr_interval_95": [
+      -1.2097505426887449e-05,
+      0.00017495548997879478
+    ]
+  },
+  {
+    "dataset": "paysim",
+    "reference": "LightGBM_native",
+    "alpha": 0.001,
+    "cluster_scheme": "four_step_time_block",
+    "cluster_count": 28,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.16773162939297126,
+    "observed_delta_fpr": 0.0001473688983608044,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      0.15032440557116528,
+      0.18580647681695403
+    ],
+    "delta_fpr_interval_95": [
+      4.042496515591614e-05,
+      0.0002729408503533433
+    ]
+  },
+  {
+    "dataset": "paysim",
+    "reference": "CatBoost_native",
+    "alpha": 0.01,
+    "cluster_scheme": "four_step_time_block",
+    "cluster_count": 28,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.036741214057507965,
+    "observed_delta_fpr": -0.00032874600403564117,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      0.024960026438440718,
+      0.04908120901205838
+    ],
+    "delta_fpr_interval_95": [
+      -0.0015937470384498674,
+      0.0008734327645235993
+    ]
+  },
+  {
+    "dataset": "paysim",
+    "reference": "XGBoost",
+    "alpha": 0.01,
+    "cluster_scheme": "four_step_time_block",
+    "cluster_count": 28,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.01437699680511173,
+    "observed_delta_fpr": 0.00012469676015144926,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      0.004242710686458189,
+      0.024390243902439025
+    ],
+    "delta_fpr_interval_95": [
+      -0.001353411530595359,
+      0.0015454140123330276
+    ]
+  },
+  {
+    "dataset": "paysim",
+    "reference": "LightGBM_native",
+    "alpha": 0.01,
+    "cluster_scheme": "four_step_time_block",
+    "cluster_count": 28,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.2460063897763578,
+    "observed_delta_fpr": 0.009114199560160519,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      0.22440928085781087,
+      0.2671938590116279
+    ],
+    "delta_fpr_interval_95": [
+      0.008075901091182532,
+      0.010297375212855932
+    ]
+  }
+]

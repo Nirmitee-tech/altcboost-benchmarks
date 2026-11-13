@@ -1,0 +1,56 @@
+{
+  "scope": "Consumed original validation; no independent confirmation",
+  "comparisons": {
+    "elliptic": {
+      "best_simple_method": "V8_all_negative",
+      "best_simple_mean_recall": 0.8362487852283771,
+      "adaptive_mean_recall": 0.8250728862973761,
+      "adaptive_beats_best_simple": false,
+      "blind_objective_calls": 121,
+      "checked_objective_calls": 121,
+      "objective_call_reduction_fraction": 0.0,
+      "blind_fit_s": 37.757056649000106,
+      "checked_fit_s": 37.88687469699994,
+      "runtime_scope": "One fit per policy and source; no repeated timing study or general speedup claim"
+    },
+    "paysim": {
+      "best_simple_method": "V8_target",
+      "best_simple_mean_recall": 0.725251677852349,
+      "adaptive_mean_recall": 0.725251677852349,
+      "adaptive_beats_best_simple": false,
+      "blind_objective_calls": 121,
+      "checked_objective_calls": 121,
+      "objective_call_reduction_fraction": 0.0,
+      "blind_fit_s": 32.649749446000044,
+      "checked_fit_s": 33.49623983299995,
+      "runtime_scope": "One fit per policy and source; no repeated timing study or general speedup claim"
+    },
+    "sparkov": {
+      "best_simple_method": "V8_target",
+      "best_simple_mean_recall": 0.7182235834609494,
+      "adaptive_mean_recall": 0.7182235834609494,
+      "adaptive_beats_best_simple": false,
+      "blind_objective_calls": 121,
+      "checked_objective_calls": 121,
+      "objective_call_reduction_fraction": 0.0,
+      "blind_fit_s": 24.64592259099993,
+      "checked_fit_s": 25.361808682999936,
+      "runtime_scope": "One fit per policy and source; no repeated timing study or general speedup claim"
+    },
+    "baf_base": {
+      "best_simple_method": "V8_linear",
+      "best_simple_mean_recall": 0.05358724534986714,
+      "adaptive_mean_recall": 0.023029229406554472,
+      "adaptive_beats_best_simple": false,
+      "blind_objective_calls": 296,
+      "checked_objective_calls": 236,
+      "objective_call_reduction_fraction": 0.20270270270270274,
+      "blind_fit_s": 113.90624429399986,
+      "checked_fit_s": 105.07098702799999,
+      "runtime_scope": "One fit per policy and source; no repeated timing study or general speedup claim"
+    }
+  },
+  "adaptive_exceeds_best_simple_count": 0,
+  "sources_compared": 4,
+  "novelty": "Unproven; primary-source overlap review is in docs/tail-continuation-research.md"
+}

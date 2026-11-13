@@ -1,0 +1,26 @@
+{
+  "dataset": "baf_base",
+  "scope": "Adaptive development experiment. Fit and score training/validation only; no calibration or final prediction is computed.",
+  "source_url": "https://github.com/Feedzai/bank-account-fraud",
+  "unit": "bank-account application row",
+  "dataset_kind": "synthetic, generated from anonymized real application data",
+  "modes": [
+    "V8_target",
+    "V8_all_negative",
+    "V8_geometric",
+    "V8_linear",
+    "V8_adaptive_blind",
+    "V8_adaptive_checked"
+  ],
+  "tree_cap": 40,
+  "seed": 17,
+  "prior_controls": {
+    "clipped_mapping": "4*tanh(raw_prior/4)",
+    "shrunk_coefficient": 0.25
+  },
+  "candidate": "Prior-free adaptive tail continuation with a tie-aware one-sided directional test",
+  "limitations": "Adaptive validation-only development on consumed sources. No independent confirmation or established novelty. Shared budget counts all fitted tree proposals, including rejected ones. Numerical directional signs are not interval-arithmetic certificates. Nonnegative exact directional derivative rules out descent only along the proposed tree, not all possible trees. Different working fractions define different objectives; no global target-loss monotonicity or future FPR guarantee. Loss evaluation counts are implementation-specific and vary in cost with tail fraction.",
+  "weak_learner_proposal_budget": 40,
+  "reference_policy": "Previously selected baseline hyperparameters, refitted with the same tree cap; validation reselects a prefix within that cap. Earlier hyperparameter tuning gives baselines additional search effort.",
+  "descent_scope": "Each accepted step decreases its current working-tail objective. The fixed target-tail loss may increase when training uses a relaxed fraction."
+}

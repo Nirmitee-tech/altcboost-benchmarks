@@ -1,0 +1,13 @@
+{
+  "local_tests": {
+    "unit_passed": 135,
+    "integration_passed": 66,
+    "unit_seconds": 3.75,
+    "integration_seconds": 18.8
+  },
+  "aggregate_csv_count": 31,
+  "source_rows_included": false,
+  "credential_pattern_matches": [],
+  "raw_source_column_matches": [],
+  "scope": "Code, synthetic test fixtures, frozen execution snapshots and aggregate benchmark results; no claim of exhaustive security scanning"
+}

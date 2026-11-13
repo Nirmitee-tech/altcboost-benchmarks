@@ -1,0 +1,18 @@
+{
+  "submitted_code_matches_readback": true,
+  "private": true,
+  "internet": false,
+  "kernel": "jitendra93266/altcboost-validation-sparkov-20261112/1",
+  "code_sha256": "0cc590b5d9bac710527b38810b00152e55372d96090dce2198e4b4bba80a22d7",
+  "completed_kernel": "jitendra93266/altcboost-validation-sparkov-20261112/1",
+  "pinned_image_and_dataset_match": true,
+  "frozen_v6_source_matches_prior": true,
+  "source_and_cohort_hashes_match_discovery": true,
+  "baseline_search_counts_verified": true,
+  "selection_record_hash_verified": true,
+  "primary_v6_counts_match_prior": true,
+  "hosted_pytest_summaries": [
+    "7 passed in 6.96s",
+    "6 passed, 17 warnings in 11.29s"
+  ]
+}

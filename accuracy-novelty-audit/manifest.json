@@ -1,0 +1,46 @@
+{
+  "observed_utc": "2026-11-13T05:49:35.041594+00:00",
+  "scope": "Original consumed validation cohorts only; no new model fit or final scoring",
+  "operating_budget": 0.001,
+  "reference_selection": "Native reference selected by original mean strict recall key, then mean FPR and AP; no new reference tuning",
+  "sources": [
+    {
+      "dataset": "elliptic",
+      "path": "v8-study/elliptic/kaggle-output/research_results/validation.csv",
+      "sha256": "482c130720d2961ac6e70591b32afac9307efbb21dbbf6ea23e4d10de82e1e64",
+      "unit": "known-label Bitcoin transaction",
+      "kind": "real anonymized Bitcoin transactions, known-label subset only",
+      "cohort_sha256": "72e3934b48976b5b1da6ffacf611cb295ab17e6f8614f402b96536e74787fcb4"
+    },
+    {
+      "dataset": "paysim",
+      "path": "v8-study/paysim/kaggle-output/research_results/validation.csv",
+      "sha256": "c374621dade0520635b1c903d6ff4d1b4a9bc764b777ddc46ce8f27c68d9f162",
+      "unit": "transaction row",
+      "kind": "synthetic mobile-money transactions",
+      "cohort_sha256": "33bea9fe34b374131b57a0b8aec62e4956d9e3f3e275cf54438ddfd109aa2e80"
+    },
+    {
+      "dataset": "sparkov",
+      "path": "v8-study/sparkov/kaggle-output/research_results/validation.csv",
+      "sha256": "1f68deb19e33d6332da4ed55df236cdfdc0df0229b6062d695f517a68b6c6a13",
+      "unit": "card-transaction row",
+      "kind": "synthetic card transactions generated with Sparkov",
+      "cohort_sha256": "03fad280d0f4e1eb221bb822e97d9da4b09f74d5cc3c111721ecf5f7f5055a4d"
+    },
+    {
+      "dataset": "baf_base",
+      "path": "v8-study/baf_base/kaggle-output/research_results/validation.csv",
+      "sha256": "6ed0c1c24b69027bb9918a47c32faf69fc2ef5837de5cfca29aadcd57d0d8ba8",
+      "unit": "bank-account application row",
+      "kind": "synthetic, generated from anonymized real application data",
+      "cohort_sha256": "63b28a96dbb68ea86704963acc8bdc7f2a15ccad6a50b2a8ec3976da7dd59d80"
+    }
+  ],
+  "limitations": [
+    "Validation selects prefixes and thresholds and has informed model redesign. No independent confirmation.",
+    "Empirical validation FPR is not a future FPR guarantee. No selection-adjusted or time-dependence-adjusted confidence intervals are inferred from counts.",
+    "Aggregate counts cannot reconstruct paired errors, score calibration, ROC-AUC or new threshold choices.",
+    "Dataset-specific acceptable recall and precision require an application cost target. No universal accuracy pass threshold is inferred."
+  ]
+}

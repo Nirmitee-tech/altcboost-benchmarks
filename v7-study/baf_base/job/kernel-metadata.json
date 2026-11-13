@@ -1,0 +1,18 @@
+{
+  "id": "jitendra93266/altcboost-v7-research-baf-base-20261113",
+  "title": "ALTCBoost V7 Research baf_base 20261113",
+  "code_file": "research.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_internet": "false",
+  "dataset_sources": [
+    "sgpjesus/bank-account-fraud-dataset-neurips-2022"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:0717e81990be591f8c5f98f033d29ab23e9ffde057e5b3a6bd4371f93969e962",
+  "docker_image_pinning_type": "original"
+}

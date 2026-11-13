@@ -1,0 +1,17 @@
+{
+  "population_and_metrics_checked": true,
+  "working_loss_descent_checked": true,
+  "proposal_budget_checked": true,
+  "blind_checked_loss_history_matches": true,
+  "blind_checked_selected_prefix_matches": true,
+  "blind_objective_calls": 296,
+  "checked_objective_calls": 236,
+  "full_prediction_parity": "Not checked on source rows; toy integration test covers it. Matching aggregate histories do not prove full prediction equality.",
+  "dataset": "baf_base",
+  "observed_utc": "2026-11-13T05:49:34.809106+00:00",
+  "source_and_cohort_hashes_match": true,
+  "executed_embedded_files_match": true,
+  "embedded_file_count": 29,
+  "results_sha256": "6ed0c1c24b69027bb9918a47c32faf69fc2ef5837de5cfca29aadcd57d0d8ba8",
+  "scope": "Training and original validation only; no independent confirmation"
+}

@@ -1,0 +1,23 @@
+{
+  "dataset": "paysim",
+  "scope": "Adaptive development experiment. Fit and score training/validation only; no calibration or final prediction is computed.",
+  "source_url": "https://github.com/EdgarLopezPhD/PaySim",
+  "unit": "transaction row",
+  "dataset_kind": "synthetic mobile-money transactions",
+  "modes": [
+    "V6_fixed",
+    "V7_zero",
+    "V7_clipped",
+    "V7_shrunk",
+    "V7_adaptive_diagonal",
+    "V7_adaptive_joint"
+  ],
+  "tree_cap": 100,
+  "seed": 17,
+  "prior_controls": {
+    "clipped_mapping": "4*tanh(raw_prior/4)",
+    "shrunk_coefficient": 0.25
+  },
+  "candidate": "Box-constrained prior/tree block updates using exact directional curvature of the temporal negative-tail objective",
+  "limitations": "Validation chooses prefixes and is also used to compare these hypotheses; scores are optimistic development evidence. Existing datasets informed the redesign. No novelty, general superiority, independent confirmation, future FPR control or global optimizer claim. Zero-start can encounter nonsmooth tail ties. Fully corrective boosting and variable-projection methods are related prior work."
+}

@@ -1,0 +1,78 @@
+{
+  "dataset": "elliptic",
+  "scope": "Local reconstruction of the frozen starting model on training/validation only. Source discovery reads all files; no calibration or final score is computed.",
+  "observed_utc": "2026-11-12T16:23:13.662955+00:00",
+  "train_cohort": {
+    "source_rows": 24717,
+    "source_positive": 2433,
+    "sampled_rows": 24717,
+    "sampled_positive": 2433,
+    "sampled_negative": 22284,
+    "time_min": 1,
+    "time_max": 26,
+    "cohort_sha256": "9a2c63663f0c4fc11a04d34d7324b88306e2439f8ab5d29c7cf12e65ba46c1b0"
+  },
+  "validation_cohort": {
+    "source_rows": 5177,
+    "source_positive": 1029,
+    "sampled_rows": 5177,
+    "sampled_positive": 1029,
+    "sampled_negative": 4148,
+    "time_min": 27,
+    "time_max": 34,
+    "cohort_sha256": "72e3934b48976b5b1da6ffacf611cb295ab17e6f8614f402b96536e74787fcb4"
+  },
+  "bound_derivation": "100 trees * maximum learning rate 0.08 * maximum absolute leaf step 5 = 40 per-event correction. Backtracking or prefix selection can only reduce this upper bound.",
+  "validation_prior_quantiles": {
+    "0": [
+      -1381.897523512884,
+      -2.5974998071392186,
+      1.9976430142827348,
+      3.435837680880952,
+      101.12602310912882
+    ],
+    "1": [
+      -11.458520583284132,
+      2.0995617590057094,
+      2.932581397676054,
+      3.561567247683915,
+      31.758424801713936
+    ]
+  },
+  "ceilings": [
+    {
+      "alpha": 0.0005,
+      "negative_count": 4148,
+      "positive_count": 1029,
+      "allowed_false_positives": 2,
+      "prior_negative_order_statistic": 45.51302155480506,
+      "absolute_correction_bound": 40.0,
+      "empirical_recall_upper_bound": 1.0,
+      "potentially_recoverable_positives": 1029,
+      "scope": "Necessary condition for ranking under an absolute per-event residual bound on these observed validation rows. Not an attainable-recall guarantee, population bound or novelty claim."
+    },
+    {
+      "alpha": 0.001,
+      "negative_count": 4148,
+      "positive_count": 1029,
+      "allowed_false_positives": 4,
+      "prior_negative_order_statistic": 29.95941144496235,
+      "absolute_correction_bound": 40.0,
+      "empirical_recall_upper_bound": 1.0,
+      "potentially_recoverable_positives": 1029,
+      "scope": "Necessary condition for ranking under an absolute per-event residual bound on these observed validation rows. Not an attainable-recall guarantee, population bound or novelty claim."
+    },
+    {
+      "alpha": 0.01,
+      "negative_count": 4148,
+      "positive_count": 1029,
+      "allowed_false_positives": 41,
+      "prior_negative_order_statistic": 3.466877576631486,
+      "absolute_correction_bound": 40.0,
+      "empirical_recall_upper_bound": 1.0,
+      "potentially_recoverable_positives": 1029,
+      "scope": "Necessary condition for ranking under an absolute per-event residual bound on these observed validation rows. Not an attainable-recall guarantee, population bound or novelty claim."
+    }
+  ],
+  "limitations": "This local diagnostic does not reproduce every hosted implementation detail or identify the sole cause of transfer failure. The bound applies conditional on the fitted starting model and a hard residual-magnitude limit; it is an architecture limitation on observed rows, not a new generalization theorem."
+}

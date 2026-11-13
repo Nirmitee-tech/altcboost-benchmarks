@@ -1,0 +1,191 @@
+[
+  {
+    "family": "V6",
+    "seed": 17,
+    "config": {},
+    "prefix": 0,
+    "fit_s": 36.09280654700001,
+    "prefix_selection_s": 0.0,
+    "training_loss": [
+      2.511394063324851,
+      2.270394788031959,
+      2.1204899546750795,
+      1.990002738906858,
+      1.907580119678105,
+      1.8434432047580724,
+      1.7835624151108422,
+      1.7328083027644139,
+      1.6950121682428152,
+      1.6651290928447835,
+      1.64135270430953,
+      1.6285347858113974,
+      1.6090965537319448,
+      1.5953023368072081,
+      1.5842879762327335,
+      1.5715926581462447,
+      1.5614957528272044
+    ]
+  },
+  {
+    "family": "CatBoost_native",
+    "seed": 17,
+    "config": {
+      "depth": 6,
+      "positive_weight": 5.0
+    },
+    "prefix": 65,
+    "fit_s": 7.620741411999973,
+    "prefix_selection_s": 9.331869201000018,
+    "training_loss": null
+  },
+  {
+    "family": "XGBoost",
+    "seed": 17,
+    "config": {
+      "depth": 4,
+      "positive_weight": 1.0
+    },
+    "prefix": 70,
+    "fit_s": 1.2709206630000267,
+    "prefix_selection_s": 2.3448497499999803,
+    "training_loss": null
+  },
+  {
+    "family": "LightGBM_native",
+    "seed": 17,
+    "config": {
+      "leaves": 15,
+      "positive_weight": 1.0
+    },
+    "prefix": 87,
+    "fit_s": 1.5658173090000105,
+    "prefix_selection_s": 10.621145109999986,
+    "training_loss": null
+  },
+  {
+    "family": "V6",
+    "seed": 42,
+    "config": {},
+    "prefix": 0,
+    "fit_s": 35.99350333999996,
+    "prefix_selection_s": 0.20819997299997794,
+    "training_loss": [
+      2.511394063324851,
+      2.270394788031959,
+      2.1204899546750795,
+      1.990002738906858,
+      1.907580119678105,
+      1.8434432047580724,
+      1.7835624151108422,
+      1.7328083027644139,
+      1.6950121682428152,
+      1.6651290928447835,
+      1.64135270430953,
+      1.6285347858113974,
+      1.6090965537319448,
+      1.5953023368072081,
+      1.5842879762327335,
+      1.5715926581462447,
+      1.5614957528272044
+    ]
+  },
+  {
+    "family": "CatBoost_native",
+    "seed": 42,
+    "config": {
+      "depth": 6,
+      "positive_weight": 5.0
+    },
+    "prefix": 63,
+    "fit_s": 7.774972422000019,
+    "prefix_selection_s": 9.82247466299998,
+    "training_loss": null
+  },
+  {
+    "family": "XGBoost",
+    "seed": 42,
+    "config": {
+      "depth": 4,
+      "positive_weight": 1.0
+    },
+    "prefix": 67,
+    "fit_s": 1.7087656909999396,
+    "prefix_selection_s": 2.4539895359999946,
+    "training_loss": null
+  },
+  {
+    "family": "LightGBM_native",
+    "seed": 42,
+    "config": {
+      "leaves": 15,
+      "positive_weight": 1.0
+    },
+    "prefix": 45,
+    "fit_s": 1.741153104000091,
+    "prefix_selection_s": 10.770598413000016,
+    "training_loss": null
+  },
+  {
+    "family": "V6",
+    "seed": 73,
+    "config": {},
+    "prefix": 0,
+    "fit_s": 36.187345794000066,
+    "prefix_selection_s": 0.2146592500000679,
+    "training_loss": [
+      2.511394063324851,
+      2.270394788031959,
+      2.1204899546750795,
+      1.990002738906858,
+      1.907580119678105,
+      1.8434432047580724,
+      1.7835624151108422,
+      1.7328083027644139,
+      1.6950121682428152,
+      1.6651290928447835,
+      1.64135270430953,
+      1.6285347858113974,
+      1.6090965537319448,
+      1.5953023368072081,
+      1.5842879762327335,
+      1.5715926581462447,
+      1.5614957528272044
+    ]
+  },
+  {
+    "family": "CatBoost_native",
+    "seed": 73,
+    "config": {
+      "depth": 6,
+      "positive_weight": 5.0
+    },
+    "prefix": 86,
+    "fit_s": 7.63234979899994,
+    "prefix_selection_s": 9.746092481000005,
+    "training_loss": null
+  },
+  {
+    "family": "XGBoost",
+    "seed": 73,
+    "config": {
+      "depth": 4,
+      "positive_weight": 1.0
+    },
+    "prefix": 18,
+    "fit_s": 1.729838010000094,
+    "prefix_selection_s": 2.43275823700003,
+    "training_loss": null
+  },
+  {
+    "family": "LightGBM_native",
+    "seed": 73,
+    "config": {
+      "leaves": 15,
+      "positive_weight": 1.0
+    },
+    "prefix": 98,
+    "fit_s": 1.70405902899995,
+    "prefix_selection_s": 10.945773586999962,
+    "training_loss": null
+  }
+]

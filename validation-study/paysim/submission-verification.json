@@ -1,0 +1,21 @@
+{
+  "submitted_code_matches_readback": true,
+  "private": true,
+  "internet": false,
+  "kernel": "jitendra93266/altcboost-validation-paysim-20261112/1",
+  "code_sha256": "fd90b86ac77450a89bbd4115e9a902bf5ee6cd173c87a4960da5a3717589decb",
+  "frozen_algorithm_files_match_prior": true,
+  "source_and_cohort_hashes_match_prior": true,
+  "primary_v6_counts_match_all_prior_budgets": true,
+  "hosted_pytest_summaries": [
+    "7 passed in 5.25s",
+    "6 passed, 17 warnings in 7.92s"
+  ],
+  "completed_kernel": "jitendra93266/altcboost-validation-paysim-20261112/1",
+  "pinned_image_and_dataset_match": true,
+  "frozen_v6_source_matches_prior": true,
+  "source_and_cohort_hashes_match_discovery": true,
+  "baseline_search_counts_verified": true,
+  "selection_record_hash_verified": true,
+  "primary_v6_counts_match_prior": true
+}

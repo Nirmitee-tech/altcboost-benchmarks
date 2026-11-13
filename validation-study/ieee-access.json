@@ -1,0 +1,9 @@
+{
+  "observed_utc": "2026-11-12T14:22:19.930694+00:00",
+  "action": "Kaggle competition train_transaction.csv download",
+  "competition": "ieee-fraud-detection",
+  "result": "403 Forbidden; access not enabled",
+  "rules_accepted_automatically": false,
+  "browser_check_utc": "2026-11-12T16:30:28.899783+00:00",
+  "browser_join_attempt": "Could not reach the join flow: The browser access host is unavailable"
+}

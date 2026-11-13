@@ -1,0 +1,35 @@
+{
+  "dataset": "elliptic",
+  "dataset_kind": "real anonymized Bitcoin transactions, known-label subset only",
+  "unit": "known-label Bitcoin transaction",
+  "source_url": "https://arxiv.org/abs/1908.02591",
+  "licence": "CC-BY-NC-ND-4.0",
+  "completed_utc": "2026-11-12T14:30:30.698280+00:00",
+  "holdout_status": "First measured real Bitcoin AML transfer evaluation; settings frozen before scoring",
+  "frozen_v6": true,
+  "baseline_trials_per_family": {
+    "CatBoost_native": 4,
+    "XGBoost": 4,
+    "LightGBM_native": 4
+  },
+  "trees": 100,
+  "seeds": [
+    17,
+    42,
+    73
+  ],
+  "selection_sha256": "fda2c511127f440d5a8d13d3b02be4aeb02b6bed22c82c73962d8423779c0919",
+  "preprocessing": "Training-fitted numeric imputation and one-hot inputs for V6/XGBoost; native categories and missing-value handling for CatBoost and LightGBM",
+  "selection": "Baseline configuration search on seed 17 validation only; all baseline prefixes scored with same selection_key as V6. Repeat seeds freeze selected hyperparameters and reselect prefix on validation.",
+  "limitations": "Equal baseline configuration counts and tree caps, not equal wall time or model capacity. Small prespecified search, not exhaustive tuning. Same cohorts across seeds; stochastic refits are not independent datasets. Cluster intervals condition on selected models and fixed calibration cutoffs, omit training/calibration uncertainty and multiple-comparison correction, and do not handle arbitrary dependence. Minimum 20 clusters is a screening rule, not a theorem. Row-wise beta intervals in results assume independent rows and do not replace unsupported cluster checks. No superiority, novelty, point-in-time feature availability or production FPR guarantee.",
+  "versions": {
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.16.3",
+    "numba": "0.61.2",
+    "catboost": "1.2.10",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0"
+  }
+}

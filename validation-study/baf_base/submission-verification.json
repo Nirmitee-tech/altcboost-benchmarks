@@ -1,0 +1,18 @@
+{
+  "submitted_code_matches_readback": true,
+  "private": true,
+  "internet": false,
+  "kernel": "jitendra93266/altcboost-validation-baf-base-20261112/1",
+  "code_sha256": "5116c94d8daae406fb149c3d5252833974d30733a97b7f7940a771fdadba98c5",
+  "completed_kernel": "jitendra93266/altcboost-validation-baf-base-20261112/1",
+  "pinned_image_and_dataset_match": true,
+  "frozen_v6_source_matches_prior": true,
+  "source_and_cohort_hashes_match_discovery": true,
+  "baseline_search_counts_verified": true,
+  "selection_record_hash_verified": true,
+  "primary_v6_counts_match_prior": true,
+  "hosted_pytest_summaries": [
+    "7 passed in 5.51s",
+    "6 passed, 17 warnings in 8.25s"
+  ]
+}

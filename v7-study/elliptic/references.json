@@ -1,0 +1,53 @@
+{
+  "CatBoost_native": {
+    "family": "CatBoost_native",
+    "trial": 0,
+    "config": {
+      "depth": 4,
+      "positive_weight": 1.0
+    },
+    "resolved_positive_weight": 1.0,
+    "prefix": 97,
+    "validation_key": [
+      0.543731778425656,
+      -0.0007232401157184186,
+      0.9793085543500212
+    ],
+    "fit_s": 1.473901728000044,
+    "selection_s": 0.706358578999982
+  },
+  "XGBoost": {
+    "family": "XGBoost",
+    "trial": 0,
+    "config": {
+      "depth": 4,
+      "positive_weight": 1.0
+    },
+    "resolved_positive_weight": 1.0,
+    "prefix": 48,
+    "validation_key": [
+      0.8415937803692906,
+      -0.0007232401157184186,
+      0.977168497381454
+    ],
+    "fit_s": 0.8458516289999807,
+    "selection_s": 0.2874657739999975
+  },
+  "LightGBM_native": {
+    "family": "LightGBM_native",
+    "trial": 2,
+    "config": {
+      "leaves": 31,
+      "positive_weight": "train_ratio"
+    },
+    "resolved_positive_weight": 9.159062885326756,
+    "prefix": 99,
+    "validation_key": [
+      0.7589893100097181,
+      -0.0007232401157184186,
+      0.9790122823395682
+    ],
+    "fit_s": 1.5797976590000076,
+    "selection_s": 1.3811766939999757
+  }
+}

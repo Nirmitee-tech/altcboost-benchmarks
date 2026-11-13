@@ -1,0 +1,19 @@
+{
+  "submitted_code_matches_readback": true,
+  "private": true,
+  "internet": false,
+  "kernel": "jitendra93266/altcboost-validation-elliptic-20261112/1",
+  "code_sha256": "12c69cadd854768bbd56bba1f45755eba7ad2ace08ded691d415445572d7d505",
+  "completed_kernel": "jitendra93266/altcboost-validation-elliptic-20261112/1",
+  "pinned_image_and_dataset_match": true,
+  "frozen_v6_source_matches_prior": true,
+  "source_and_cohort_hashes_match_discovery": true,
+  "baseline_search_counts_verified": true,
+  "selection_record_hash_verified": true,
+  "primary_v6_counts_match_prior": null,
+  "hosted_pytest_summaries": [
+    "7 passed in 7.23s",
+    "6 passed, 17 warnings in 11.28s"
+  ],
+  "prior_comparison_status": "Not applicable: first real AML transfer measurement"
+}

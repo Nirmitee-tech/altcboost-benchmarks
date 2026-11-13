@@ -1,0 +1,53 @@
+{
+  "CatBoost_native": {
+    "family": "CatBoost_native",
+    "trial": 3,
+    "config": {
+      "depth": 8,
+      "positive_weight": 10.0
+    },
+    "resolved_positive_weight": 10.0,
+    "prefix": 100,
+    "validation_key": [
+      0.7344798657718121,
+      -0.0007441272832394699,
+      0.8675106681720767
+    ],
+    "fit_s": 2.877012863999994,
+    "selection_s": 3.9482898069999806
+  },
+  "XGBoost": {
+    "family": "XGBoost",
+    "trial": 3,
+    "config": {
+      "depth": 9,
+      "positive_weight": 5.0
+    },
+    "resolved_positive_weight": 5.0,
+    "prefix": 80,
+    "validation_key": [
+      0.7399328859060403,
+      -0.0007441272832394699,
+      0.8738402644481916
+    ],
+    "fit_s": 0.9007336060000171,
+    "selection_s": 1.8764257579999821
+  },
+  "LightGBM_native": {
+    "family": "LightGBM_native",
+    "trial": 0,
+    "config": {
+      "leaves": 15,
+      "positive_weight": 1.0
+    },
+    "resolved_positive_weight": 1.0,
+    "prefix": 1,
+    "validation_key": [
+      0.5536912751677853,
+      -0.0006424120430844343,
+      0.635072971055852
+    ],
+    "fit_s": 0.850128331999997,
+    "selection_s": 6.295834382999999
+  }
+}

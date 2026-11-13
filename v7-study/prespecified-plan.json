@@ -1,0 +1,96 @@
+{
+  "created_utc": "2026-11-13T02:35:35.250048+00:00",
+  "hypothesis": "A revisable prior plus a new-tree coordinate can improve strict-tail validation performance over fixed, zero and statically modified priors",
+  "mechanisms": [
+    "V6_fixed",
+    "V7_zero",
+    "V7_clipped",
+    "V7_shrunk",
+    "V7_adaptive_diagonal",
+    "V7_adaptive_joint"
+  ],
+  "fixed_settings": {
+    "trees": 100,
+    "max_leaves": 17,
+    "min_samples_leaf": 40,
+    "learning_rate": 0.08,
+    "leaf_step_bound": 5.0,
+    "tail_fraction": 0.01,
+    "anchor_weight": 0.2,
+    "group_temperature": 0.25,
+    "block_damping": 0.001,
+    "seed": 17
+  },
+  "controls": {
+    "clipped": "4*tanh(raw_prior/4)",
+    "shrunk": "fixed prior coefficient 0.25",
+    "zero": "zero starting score; same nonsmooth target loss"
+  },
+  "adaptive_update": "Box-constrained prior coefficient in [0,1] and new-tree coefficient in [0,0.08]; normalized damped exact two-coordinate Newton proposal; compare with tree-only and prior-only proposals using actual-loss backtracking",
+  "evaluation": "Training and original validation only. No calibration or final frame is fitted, transformed for prediction or scored after source discovery. Validation selects prefixes and compares hypotheses, so outcomes are optimistic adaptive development.",
+  "success_questions": [
+    "Does adaptive_joint improve beyond the best simple starting-score control?",
+    "Does cross-coordinate curvature help beyond adaptive_diagonal?",
+    "Does the learned prior weight vary usefully by data regime instead of merely duplicating zero start?"
+  ],
+  "falsifiers": [
+    "If simpler controls match or beat the joint update, do not attribute gains to the extra mechanism.",
+    "If diagonal updates match the full update, do not claim cross-curvature is responsible.",
+    "Do not call clipping, coefficient correction, partial-AUC or group DRO individually novel."
+  ],
+  "reference_policy": "Refit previously selected native baseline configurations at frozen prefixes; require their validation keys to reproduce",
+  "reference_cohorts": {
+    "elliptic": {
+      "training_cohort": "9a2c63663f0c4fc11a04d34d7324b88306e2439f8ab5d29c7cf12e65ba46c1b0",
+      "validation_cohort": "72e3934b48976b5b1da6ffacf611cb295ab17e6f8614f402b96536e74787fcb4",
+      "expected_v6_validation_key": [
+        0.00048590864917395527,
+        -0.0007232401157184186,
+        0.9311178155927057
+      ],
+      "source_files": {
+        "elliptic_txs_features.csv": "fd7f83573443c9e302e371d3f110e3b6224160f5d1ed8a287757936127800ff0",
+        "elliptic_txs_classes.csv": "93e2e7b2405c735ba752bf6ba06b947561deddd1f5a8fc91e46f6a4c0e439493"
+      }
+    },
+    "paysim": {
+      "training_cohort": "72ee3c097751a7850a42f82d2b5b443b4d8c75a04a0a65dbc6aaabde212de093",
+      "validation_cohort": "33bea9fe34b374131b57a0b8aec62e4956d9e3f3e275cf54438ddfd109aa2e80",
+      "expected_v6_validation_key": [
+        0.7160234899328859,
+        -0.0007441272832394699,
+        0.89200633080671
+      ],
+      "source_files": {
+        "PS_20174392719_1491204439457_log.csv": "16910f90577b0d981bf8ff289714510bb89bc71bff7d3f220f024e287e4eea6b"
+      }
+    },
+    "sparkov": {
+      "training_cohort": "bec196feeffe066b782c186eca79d3f2022180facb483e7ea9acf04f53c4bc8b",
+      "validation_cohort": "03fad280d0f4e1eb221bb822e97d9da4b09f74d5cc3c111721ecf5f7f5055a4d",
+      "expected_v6_validation_key": [
+        0.6937212863705973,
+        -0.0007448639616697032,
+        0.808475296623126
+      ],
+      "source_files": {
+        "fraudTrain.csv": "fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d",
+        "fraudTest.csv": "12d553ab19440c752d2531ee1af44bb64f12cc3d3839f1649f19e81c230545f0"
+      }
+    },
+    "baf_base": {
+      "training_cohort": "ad95770ecebc3298ad639caa99e8d0d48db24781dd3b55693041d423b4944be5",
+      "validation_cohort": "63b28a96dbb68ea86704963acc8bdc7f2a15ccad6a50b2a8ec3976da7dd59d80",
+      "expected_v6_validation_key": [
+        0.03897254207263064,
+        -0.000743392905907698,
+        0.13987847195464725
+      ],
+      "source_files": {
+        "Base.csv": "7bf10a37ce07e72e14c1b09e5efee3d27261baff4facc7da767b0474dcf9b809"
+      }
+    }
+  },
+  "holdout_policy": "All prior final results remain recorded; no V7 final test or independent confirmation in this phase",
+  "novelty_status": "Unproven. Fully corrective pAUC ensembles and VPBoost overlap with the proposal and require explicit comparison."
+}

@@ -1,0 +1,105 @@
+{
+  "created_utc": "2026-11-13T03:11:50.645690+00:00",
+  "hypothesis": "Descent-driven relaxation of the negative tail can recover useful tree updates when strict-tail proposals fail, with fewer futile loss evaluations from a tie-aware directional check.",
+  "mechanisms": [
+    "target",
+    "all_negative",
+    "geometric",
+    "linear",
+    "adaptive_blind",
+    "adaptive_checked"
+  ],
+  "fixed_settings": {
+    "total_tree_proposals": 40,
+    "max_leaves": 17,
+    "min_samples_leaf": 40,
+    "learning_rate": 0.08,
+    "leaf_step_bound": 5.0,
+    "target_tail_fraction": 0.01,
+    "anchor_weight": 0.2,
+    "group_temperature": 0.25,
+    "temperature": 1.0,
+    "seed": 17,
+    "backtracks": 12
+  },
+  "working_tail_grid": [
+    0.01,
+    0.02,
+    0.04,
+    0.08,
+    0.16,
+    0.32,
+    0.64,
+    1.0
+  ],
+  "budget_policy": "Each proposed tree counts, including rejected proposals. Accepted tree counts, objective-call cost and wall time can differ.",
+  "reference_policy": "Prior selected native baseline hyperparameters with tree cap 40; prefixes reselected on original validation. Additional earlier hyperparameter search is not matched.",
+  "reference_cohorts": {
+    "elliptic": {
+      "training_cohort": "9a2c63663f0c4fc11a04d34d7324b88306e2439f8ab5d29c7cf12e65ba46c1b0",
+      "validation_cohort": "72e3934b48976b5b1da6ffacf611cb295ab17e6f8614f402b96536e74787fcb4",
+      "expected_v6_validation_key": [
+        0.00048590864917395527,
+        -0.0007232401157184186,
+        0.9311178155927057
+      ],
+      "source_files": {
+        "elliptic_txs_features.csv": "fd7f83573443c9e302e371d3f110e3b6224160f5d1ed8a287757936127800ff0",
+        "elliptic_txs_classes.csv": "93e2e7b2405c735ba752bf6ba06b947561deddd1f5a8fc91e46f6a4c0e439493"
+      }
+    },
+    "paysim": {
+      "training_cohort": "72ee3c097751a7850a42f82d2b5b443b4d8c75a04a0a65dbc6aaabde212de093",
+      "validation_cohort": "33bea9fe34b374131b57a0b8aec62e4956d9e3f3e275cf54438ddfd109aa2e80",
+      "expected_v6_validation_key": [
+        0.7160234899328859,
+        -0.0007441272832394699,
+        0.89200633080671
+      ],
+      "source_files": {
+        "PS_20174392719_1491204439457_log.csv": "16910f90577b0d981bf8ff289714510bb89bc71bff7d3f220f024e287e4eea6b"
+      }
+    },
+    "sparkov": {
+      "training_cohort": "bec196feeffe066b782c186eca79d3f2022180facb483e7ea9acf04f53c4bc8b",
+      "validation_cohort": "03fad280d0f4e1eb221bb822e97d9da4b09f74d5cc3c111721ecf5f7f5055a4d",
+      "expected_v6_validation_key": [
+        0.6937212863705973,
+        -0.0007448639616697032,
+        0.808475296623126
+      ],
+      "source_files": {
+        "fraudTrain.csv": "fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d",
+        "fraudTest.csv": "12d553ab19440c752d2531ee1af44bb64f12cc3d3839f1649f19e81c230545f0"
+      }
+    },
+    "baf_base": {
+      "training_cohort": "ad95770ecebc3298ad639caa99e8d0d48db24781dd3b55693041d423b4944be5",
+      "validation_cohort": "63b28a96dbb68ea86704963acc8bdc7f2a15ccad6a50b2a8ec3976da7dd59d80",
+      "expected_v6_validation_key": [
+        0.03897254207263064,
+        -0.000743392905907698,
+        0.13987847195464725
+      ],
+      "source_files": {
+        "Base.csv": "7bf10a37ce07e72e14c1b09e5efee3d27261baff4facc7da767b0474dcf9b809"
+      }
+    }
+  },
+  "scope": "Fit/score training and original validation only. Source discovery reads later partitions for schema and source verification but no later prediction is computed. All four sources are consumed development sources.",
+  "primary_measure": "Mean validation recall at empirical FPR budgets .0005 and .001, followed by lower mean FPR and higher AP.",
+  "claims_to_disprove": [
+    "Adaptive continuation beats fixed-tail and clock schedule controls under the common proposal budget.",
+    "Checked and blind adaptive training have matching accepted trajectories and prefixes while checked uses fewer objective calls.",
+    "BAF stalling can be recovered by this proposed-tree-driven continuation."
+  ],
+  "falsifiers": [
+    "If schedules match or beat adaptation, withdraw adaptive quality claim.",
+    "If checked differs in trajectory, investigate before attributing cost benefit to safe rejection.",
+    "If wall time rises despite fewer objective calls, report overhead rather than speedup."
+  ],
+  "descent_scope": "Actual accepted working objective only. Fixed target loss may rise when relaxed. Exact nonnegative directional derivative excludes descent along that tree only; floating-point signs are not formal interval certificates.",
+  "prior_art": "pAUC/DRO, continuation, curriculum, hard-negative mining and directional calculus are established. The specific tested scheduling and rejection mechanism is a novelty candidate, not an established first.",
+  "holdout_policy": "No new calibration or final scoring. Previous final results remain unchanged.",
+  "withdrawn": "V7 coupled prior/tree update did not exceed best static controls on any of the four sources; do not promote that mechanism."
+}

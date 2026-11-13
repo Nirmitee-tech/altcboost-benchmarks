@@ -1,0 +1,108 @@
+{
+  "created_utc": "2026-11-12T14:12:59.624817+00:00",
+  "datasets": [
+    "baf_base",
+    "paysim",
+    "sparkov",
+    "elliptic"
+  ],
+  "candidate": "V6 numerical settings and training method frozen from pairwise-study; no new candidate hyperparameter search",
+  "baseline_grids": {
+    "CatBoost_native": [
+      {
+        "depth": 4,
+        "positive_weight": 1.0
+      },
+      {
+        "depth": 6,
+        "positive_weight": 5.0
+      },
+      {
+        "depth": 6,
+        "positive_weight": "train_ratio"
+      },
+      {
+        "depth": 8,
+        "positive_weight": 10.0
+      }
+    ],
+    "XGBoost": [
+      {
+        "depth": 4,
+        "positive_weight": 1.0
+      },
+      {
+        "depth": 7,
+        "positive_weight": 10.0
+      },
+      {
+        "depth": 5,
+        "positive_weight": "train_ratio"
+      },
+      {
+        "depth": 9,
+        "positive_weight": 5.0
+      }
+    ],
+    "LightGBM_native": [
+      {
+        "leaves": 15,
+        "positive_weight": 1.0
+      },
+      {
+        "leaves": 31,
+        "positive_weight": 10.0
+      },
+      {
+        "leaves": 31,
+        "positive_weight": "train_ratio"
+      },
+      {
+        "leaves": 63,
+        "positive_weight": 5.0
+      }
+    ]
+  },
+  "tree_cap": 100,
+  "primary_seed": 17,
+  "repeat_seeds": [
+    42,
+    73
+  ],
+  "train_cap": 150000,
+  "eval_cap": 100000,
+  "sampling_seed": 20261112,
+  "selection": "Four configurations per baseline family; score every fitted tree prefix using the same low-FPR validation selection_key as V6. Select hyperparameters on seed 17 validation only. Repeat seeds keep those hyperparameters and reselect prefix on validation.",
+  "fairness": "Matched baseline trial counts and tree cap, not matched wall time or model capacity. Native CatBoost and native categorical LightGBM; train-fitted shared numeric encoding for XGBoost and V6.",
+  "budgets": [
+    0.0005,
+    0.001,
+    0.01
+  ],
+  "uncertainty": {
+    "replicates": 2000,
+    "seed": 20261112,
+    "min_clusters": 20,
+    "schemes": {
+      "paysim": "four published steps per time block",
+      "sparkov": [
+        "calendar weeks",
+        "card IDs separately"
+      ],
+      "baf_base": "published month",
+      "elliptic": "published time step"
+    },
+    "interpretation": "Paired percentile intervals conditional on selected models and fixed calibration cutoffs. No multiple-comparison correction or general dependence guarantee; fewer than 20 clusters is unsupported."
+  },
+  "holdouts": {
+    "baf_base": "consumed synthetic development",
+    "paysim": "consumed synthetic development",
+    "sparkov": "consumed synthetic development",
+    "elliptic": "First measurement of frozen V6 on a real known-label Bitcoin AML transfer target, not independent payment-fraud confirmation"
+  },
+  "elliptic_features": "Local published positions 2..94 only; exclude transaction ID, time and 72 backward/forward-neighbour features. Unknown labels excluded. Source anonymization and point-in-time availability cannot be independently audited.",
+  "external_access": {
+    "ieee_cis": "Download retried this turn and returned 403; do not accept competition rules or bypass access restrictions."
+  },
+  "reporting": "Retain all budgets, seeds, regressions and prefix-zero cases. No algorithm changes or model promotion based on final outcomes. Real transfer task is reported separately; never pool datasets."
+}

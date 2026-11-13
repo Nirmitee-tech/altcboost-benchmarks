@@ -1,0 +1,34 @@
+{
+  "observed_utc": "2026-11-13T04:41:45.475767+00:00",
+  "scope": "Repeated frozen gate suites per private Kaggle notebook, not unique additional tests",
+  "results": {
+    "elliptic": {
+      "unit_passed": 9,
+      "integration_passed": 10,
+      "source_logs": [
+        "v8-study/elliptic/kaggle-output/altcboost-v8-research-elliptic-20261113.log"
+      ]
+    },
+    "paysim": {
+      "unit_passed": 9,
+      "integration_passed": 10,
+      "source_logs": [
+        "v8-study/paysim/kaggle-output/altcboost-v8-research-paysim-20261113.log"
+      ]
+    },
+    "sparkov": {
+      "unit_passed": 9,
+      "integration_passed": 10,
+      "source_logs": [
+        "v8-study/sparkov/kaggle-output/altcboost-v8-research-sparkov-20261113.log"
+      ]
+    },
+    "baf_base": {
+      "unit_passed": 9,
+      "integration_passed": 10,
+      "source_logs": [
+        "v8-study/baf_base/kaggle-output/altcboost-v8-research-baf-base-20261113.log"
+      ]
+    }
+  }
+}

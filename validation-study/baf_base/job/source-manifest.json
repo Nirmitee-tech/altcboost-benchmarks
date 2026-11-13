@@ -1,0 +1,23 @@
+{
+  "kernel": "jitendra93266/altcboost-validation-baf-base-20261112",
+  "notebook_sha256": "046fb44e7ce8b8929053d0a1946c1204a22832619074a25f104c1ea2d9fa245f",
+  "source_files": [
+    "altcboost.py",
+    "altcboost_v2.py",
+    "altcboost_v3.py",
+    "altcboost_v5.py",
+    "altcboost_v6.py",
+    "evaluation.py",
+    "detection_objective.py",
+    "tail_objective.py",
+    "multi_data.py",
+    "multi_benchmark.py",
+    "validation_data.py",
+    "cluster_uncertainty.py",
+    "tuned_models.py",
+    "validation_experiment.py",
+    "tests/test_multi_unit.py",
+    "tests/test_validation_unit.py",
+    "tests/test_validation_integration.py"
+  ]
+}

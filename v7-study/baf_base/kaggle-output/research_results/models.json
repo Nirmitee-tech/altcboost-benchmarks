@@ -1,0 +1,661 @@
+[
+  {
+    "method": "V6_fixed",
+    "fit_s": 43.27749839699999,
+    "selected_prefix": 0,
+    "selected_prior_weight": 1.0,
+    "training_loss": [
+      2.511394063324851,
+      2.270394788031959,
+      2.1204899546750795,
+      1.990002738906858,
+      1.907580119678105,
+      1.8434432047580724,
+      1.7835624151108422,
+      1.7328083027644139,
+      1.6950121682428152,
+      1.6651290928447835,
+      1.64135270430953,
+      1.6285347858113974,
+      1.6090965537319448,
+      1.5953023368072081,
+      1.5842879762327335,
+      1.5715926581462447,
+      1.5614957528272044
+    ],
+    "prior_weights": null,
+    "step_diagnostics": [
+      {
+        "rate": 0.08,
+        "backtracks": 0,
+        "group_losses": [
+          3.051413188769957,
+          2.9562695183318297,
+          3.153680485890502,
+          2.852873177699173
+        ],
+        "group_weights": [
+          0.274661506753908,
+          0.18772249336917024,
+          0.41347979233247434,
+          0.12413620754444796
+        ]
+      },
+      {
+        "rate": 0.08,
+        "backtracks": 0,
+        "group_losses": [
+          2.7478000148749206,
+          2.6925633979872394,
+          2.8187266056579126,
+          2.58384931624991
+        ],
+        "group_weights": [
+          0.274060622367454,
+          0.2197307347722753,
+          0.36396426675565546,
+          0.14224437610461607
+        ]
+      },
+      {
+        "rate": 0.08,
+        "backtracks": 0,
+        "group_losses": [
+          2.5527558061199334,
+          2.5029185641444673,
+          2.620451584045812,
+          2.4077036998419006
+        ],
+        "group_weights": [
+          0.27100004192697064,
+          0.22202056388386893,
+          0.3552785349389437,
+          0.1517008592502172
+        ]
+      },
+      {
+        "rate": 0.08,
+        "backtracks": 0,
+        "group_losses": [
+          2.412459012961357,
+          2.355141659266744,
+          2.412228320730501,
+          2.232871286796456
+        ],
+        "group_weights": [
+          0.3047156980338434,
+          0.242283805621631,
+          0.3044346455504103,
+          0.14856585079411552
+        ]
+      },
+      {
+        "rate": 0.08,
+        "backtracks": 0,
+        "group_losses": [
+          2.2945893353313,
+          2.231041415954356,
+          2.293290139138812,
+          2.1717768518984233
+        ],
+        "group_weights": [
+          0.2956637109586029,
+          0.22929996089564975,
+          0.29413119581314645,
+          0.18090513233260014
+        ]
+      },
+      {
+        "rate": 0.08,
+        "backtracks": 0,
+        "group_losses": [
+          2.209745299135376,
+          2.161515754657705,
+          2.1858450911170637,
+          2.08866333388447
+        ],
+        "group_weights": [
+          0.2985531523826013,
+          0.24617183393162428,
+          0.2713330816735841,
+          0.18394193201218995
+        ]
+      },
+      {
+        "rate": 0.08,
+        "backtracks": 0,
+        "group_losses": [
+          2.13076842132525,
+          2.088564966926012,
+          2.094548880454195,
+          2.00925536626027
+        ],
+        "group_weights": [
+          0.3007660333440064,
+          0.25404688765229116,
+          0.26020102390805805,
+          0.18498605509564514
+        ]
+      },
+      {
+        "rate": 0.08,
+        "backtracks": 0,
+        "group_losses": [
+          2.0532852600048983,
+          2.0186435132938243,
+          2.027026900365736,
+          1.9517742459949936
+        ],
+        "group_weights": [
+          0.29093616080622065,
+          0.25329045598266203,
+          0.26192820143350243,
+          0.19384518177761506
+        ]
+      },
+      {
+        "rate": 0.08,
+        "backtracks": 0,
+        "group_losses": [
+          1.9970415562205175,
+          1.9559068287478212,
+          1.9749008529178735,
+          1.9158786660924636
+        ],
+        "group_weights": [
+          0.286836264314801,
+          0.24331882866058424,
+          0.2625256344033666,
+          0.20731927262124833
+        ]
+      },
+      {
+        "rate": 0.08,
+        "backtracks": 0,
+        "group_losses": [
+          1.9502672464327901,
+          1.9117499875491701,
+          1.9323577750234522,
+          1.8857014107944219
+        ],
+        "group_weights": [
+          0.28086159455679327,
+          0.24075816534784902,
+          0.2614450470493174,
+          0.21693519304604042
+        ]
+      },
+      {
+        "rate": 0.08,
+        "backtracks": 0,
+        "group_losses": [
+          1.9267998941944033,
+          1.8768198176798678,
+          1.891342691087501,
+          1.8582382084912537
+        ],
+        "group_weights": [
+          0.2901317243600273,
+          0.23755869641167593,
+          0.25176754702201654,
+          0.22054203220628102
+        ]
+      },
+      {
+        "rate": 0.08,
+        "backtracks": 0,
+        "group_losses": [
+          1.8945633524544738,
+          1.8722005759594826,
+          1.872329258990125,
+          1.8472725988085126
+        ],
+        "group_weights": [
+          0.2734490538641044,
+          0.25005083165416964,
+          0.25017957398056023,
+          0.226320540501165
+        ]
+      },
+      {
+        "rate": 0.08,
+        "backtracks": 0,
+        "group_losses": [
+          1.8697541397360615,
+          1.8414430984840304,
+          1.8448674850443123,
+          1.822068365728673
+        ],
+        "group_weights": [
+          0.27589820515285746,
+          0.2463585045867047,
+          0.24975622871280628,
+          0.2279870615476321
+        ]
+      },
+      {
+        "rate": 0.08,
+        "backtracks": 0,
+        "group_losses": [
+          1.8462127156085804,
+          1.836081347434375,
+          1.8217930726951233,
+          1.8068565574234245
+        ],
+        "group_weights": [
+          0.2687040685514953,
+          0.2580324067065237,
+          0.24369856822652702,
+          0.2295649565154536
+        ]
+      },
+      {
+        "rate": 0.08,
+        "backtracks": 0,
+        "group_losses": [
+          1.832011342374329,
+          1.8204808790934552,
+          1.8061002723210768,
+          1.7989266521818421
+        ],
+        "group_weights": [
+          0.2679158182422252,
+          0.255839671993385,
+          0.24153841769377793,
+          0.23470609207061244
+        ]
+      },
+      {
+        "rate": 0.08,
+        "backtracks": 0,
+        "group_losses": [
+          1.8141256490700206,
+          1.7944724090032567,
+          1.8019882857193494,
+          1.7907577826014398
+        ],
+        "group_weights": [
+          0.26400745216347316,
+          0.24404786409342286,
+          0.2514961992846104,
+          0.24044848445849282
+        ]
+      }
+    ]
+  },
+  {
+    "method": "V7_zero",
+    "fit_s": 3.0198329739999963,
+    "selected_prefix": 0,
+    "selected_prior_weight": 0.0,
+    "training_loss": [
+      1.1892387861265674
+    ],
+    "prior_weights": [
+      0.0
+    ],
+    "step_diagnostics": []
+  },
+  {
+    "method": "V7_clipped",
+    "fit_s": 43.2692447,
+    "selected_prefix": 0,
+    "selected_prior_weight": 1.0,
+    "training_loss": [
+      2.223680799039179,
+      2.0193871503272143,
+      1.912465069915683,
+      1.8336913653064746,
+      1.770791576146651,
+      1.7174593066492065,
+      1.6825500137281644,
+      1.6493276690593766,
+      1.6184443849768833,
+      1.5950333104939984,
+      1.5781420618634083,
+      1.5637714910092135,
+      1.5518287749357393,
+      1.5386015352154343,
+      1.5296617539455755,
+      1.5201113332429528,
+      1.511134222337263
+    ],
+    "prior_weights": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "step_diagnostics": [
+      {
+        "kind": "tree_only",
+        "prior_weight": 1.0,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 1.0,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 1.0,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 1.0,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 1.0,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 1.0,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 1.0,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 1.0,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 1.0,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 1.0,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 1.0,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 1.0,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 1.0,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 1.0,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 1.0,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 1.0,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      }
+    ]
+  },
+  {
+    "method": "V7_shrunk",
+    "fit_s": 44.292304692000016,
+    "selected_prefix": 0,
+    "selected_prior_weight": 0.25,
+    "training_loss": [
+      1.4623635803752428,
+      1.3987669302096573,
+      1.3834793517661075,
+      1.3753531197359576,
+      1.3734358852634911,
+      1.3615071894745787,
+      1.3589342185944346,
+      1.3517973594991481,
+      1.3450744510466388,
+      1.3404612744422089,
+      1.34045521014023,
+      1.334588369229031,
+      1.3345080316954188,
+      1.3317090064401575,
+      1.3267907917275747,
+      1.3238447870148793,
+      1.3230263003029559
+    ],
+    "prior_weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "step_diagnostics": [
+      {
+        "kind": "tree_only",
+        "prior_weight": 0.25,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 0.25,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 0.25,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 0.25,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 0.25,
+        "prior_delta": 0.0,
+        "tree_rate": 0.04,
+        "backtracks": 1
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 0.25,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 0.25,
+        "prior_delta": 0.0,
+        "tree_rate": 0.04,
+        "backtracks": 1
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 0.25,
+        "prior_delta": 0.0,
+        "tree_rate": 0.04,
+        "backtracks": 1
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 0.25,
+        "prior_delta": 0.0,
+        "tree_rate": 0.04,
+        "backtracks": 1
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 0.25,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 0.25,
+        "prior_delta": 0.0,
+        "tree_rate": 0.04,
+        "backtracks": 1
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 0.25,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 0.25,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 0.25,
+        "prior_delta": 0.0,
+        "tree_rate": 0.04,
+        "backtracks": 1
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 0.25,
+        "prior_delta": 0.0,
+        "tree_rate": 0.04,
+        "backtracks": 1
+      },
+      {
+        "kind": "tree_only",
+        "prior_weight": 0.25,
+        "prior_delta": 0.0,
+        "tree_rate": 0.08,
+        "backtracks": 0
+      }
+    ]
+  },
+  {
+    "method": "V7_adaptive_diagonal",
+    "fit_s": 6.8281794430000105,
+    "selected_prefix": 0,
+    "selected_prior_weight": 1.0,
+    "training_loss": [
+      2.511394063324851,
+      1.1892387861265674
+    ],
+    "prior_weights": [
+      1.0,
+      0.0
+    ],
+    "step_diagnostics": [
+      {
+        "kind": "prior_only",
+        "prior_weight": 0.0,
+        "prior_delta": -1.0,
+        "tree_rate": 0.0,
+        "backtracks": 0
+      }
+    ]
+  },
+  {
+    "method": "V7_adaptive_joint",
+    "fit_s": 6.713387606000026,
+    "selected_prefix": 0,
+    "selected_prior_weight": 1.0,
+    "training_loss": [
+      2.511394063324851,
+      1.1892387861265674
+    ],
+    "prior_weights": [
+      1.0,
+      0.0
+    ],
+    "step_diagnostics": [
+      {
+        "kind": "prior_only",
+        "prior_weight": 0.0,
+        "prior_delta": -1.0,
+        "tree_rate": 0.0,
+        "backtracks": 0
+      }
+    ]
+  }
+]

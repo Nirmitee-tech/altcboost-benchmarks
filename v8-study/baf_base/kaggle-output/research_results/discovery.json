@@ -1,0 +1,220 @@
+{
+  "dataset": "baf_base",
+  "dataset_ref": "sgpjesus/bank-account-fraud-dataset-neurips-2022",
+  "dataset_kind": "synthetic, generated from anonymized real application data",
+  "unit": "bank-account application row",
+  "source_url": "https://github.com/Feedzai/bank-account-fraud",
+  "licence": "CC-BY-NC-SA-4.0",
+  "observed_utc": "2026-11-13T03:13:27.990125+00:00",
+  "files": [
+    {
+      "name": "Base.csv",
+      "sha256": "7bf10a37ce07e72e14c1b09e5efee3d27261baff4facc7da767b0474dcf9b809",
+      "rows": 1000000,
+      "positive": 11029,
+      "time_min": 0,
+      "time_max": 7
+    }
+  ],
+  "source_rows": 1000000,
+  "partitions": {
+    "train": {
+      "source_rows": 547975,
+      "source_positive": 5288,
+      "sampled_rows": 150000,
+      "sampled_positive": 1461,
+      "sampled_negative": 148539,
+      "time_min": 0,
+      "time_max": 3,
+      "cohort_sha256": "ad95770ecebc3298ad639caa99e8d0d48db24781dd3b55693041d423b4944be5",
+      "equivalent_predictor_label_rows": 0
+    },
+    "validation": {
+      "source_rows": 127691,
+      "source_positive": 1452,
+      "sampled_rows": 100000,
+      "sampled_positive": 1129,
+      "sampled_negative": 98871,
+      "time_min": 4,
+      "time_max": 4,
+      "cohort_sha256": "63b28a96dbb68ea86704963acc8bdc7f2a15ccad6a50b2a8ec3976da7dd59d80",
+      "equivalent_predictor_label_rows": 0
+    },
+    "calibration": {
+      "source_rows": 119323,
+      "source_positive": 1411,
+      "sampled_rows": 100000,
+      "sampled_positive": 1152,
+      "sampled_negative": 98848,
+      "time_min": 5,
+      "time_max": 5,
+      "cohort_sha256": "873e242a0c0bbb39b37e32e251814c50ee78178a566c8772aeeb3a0fbb678468",
+      "equivalent_predictor_label_rows": 0
+    },
+    "test": {
+      "source_rows": 205011,
+      "source_positive": 2878,
+      "sampled_rows": 100000,
+      "sampled_positive": 1408,
+      "sampled_negative": 98592,
+      "time_min": 6,
+      "time_max": 7,
+      "cohort_sha256": "0ac885593f7d20e57a260a5e0f37fdaa7223c613111a616c4de13c63f22c989b",
+      "equivalent_predictor_label_rows": 0
+    }
+  },
+  "time_edges": [
+    4,
+    5,
+    6
+  ],
+  "time_unit": "month",
+  "raw_read_column_allowlist": [
+    "fraud_bool",
+    "month",
+    "income",
+    "name_email_similarity",
+    "prev_address_months_count",
+    "current_address_months_count",
+    "customer_age",
+    "days_since_request",
+    "intended_balcon_amount",
+    "zip_count_4w",
+    "velocity_6h",
+    "velocity_24h",
+    "velocity_4w",
+    "bank_branch_count_8w",
+    "date_of_birth_distinct_emails_4w",
+    "credit_risk_score",
+    "email_is_free",
+    "phone_home_valid",
+    "phone_mobile_valid",
+    "bank_months_count",
+    "has_other_cards",
+    "proposed_credit_limit",
+    "foreign_request",
+    "session_length_in_minutes",
+    "keep_alive_session",
+    "device_distinct_emails_8w",
+    "payment_type",
+    "employment_status",
+    "housing_status",
+    "source",
+    "device_os"
+  ],
+  "predictor_allowlist": [
+    "income",
+    "name_email_similarity",
+    "prev_address_months_count",
+    "current_address_months_count",
+    "customer_age",
+    "days_since_request",
+    "intended_balcon_amount",
+    "zip_count_4w",
+    "velocity_6h",
+    "velocity_24h",
+    "velocity_4w",
+    "bank_branch_count_8w",
+    "date_of_birth_distinct_emails_4w",
+    "credit_risk_score",
+    "email_is_free",
+    "phone_home_valid",
+    "phone_mobile_valid",
+    "bank_months_count",
+    "has_other_cards",
+    "proposed_credit_limit",
+    "foreign_request",
+    "session_length_in_minutes",
+    "keep_alive_session",
+    "device_distinct_emails_8w",
+    "payment_type",
+    "employment_status",
+    "housing_status",
+    "source",
+    "device_os"
+  ],
+  "excluded_reason": "month is used only for partitioning; device_fraud_count is excluded as a fraud-history field",
+  "source_missing_predictor_values": {
+    "income": 0,
+    "name_email_similarity": 0,
+    "prev_address_months_count": 0,
+    "current_address_months_count": 0,
+    "customer_age": 0,
+    "days_since_request": 0,
+    "intended_balcon_amount": 0,
+    "zip_count_4w": 0,
+    "velocity_6h": 0,
+    "velocity_24h": 0,
+    "velocity_4w": 0,
+    "bank_branch_count_8w": 0,
+    "date_of_birth_distinct_emails_4w": 0,
+    "credit_risk_score": 0,
+    "email_is_free": 0,
+    "phone_home_valid": 0,
+    "phone_mobile_valid": 0,
+    "bank_months_count": 0,
+    "has_other_cards": 0,
+    "proposed_credit_limit": 0,
+    "foreign_request": 0,
+    "session_length_in_minutes": 0,
+    "keep_alive_session": 0,
+    "device_distinct_emails_8w": 0,
+    "payment_type": 0,
+    "employment_status": 0,
+    "housing_status": 0,
+    "source": 0,
+    "device_os": 0
+  },
+  "entity_overlap": {
+    "status": "unavailable; source has no applicant identifier"
+  },
+  "scope": "Full-source metadata with capped, deterministic, label-blind temporal cohorts; no row export",
+  "sampling": {
+    "seed": 20261112,
+    "train_cap": 150000,
+    "eval_cap": 100000,
+    "method": "lowest stable hash priorities within each time partition"
+  },
+  "duplicate_policy": "Equal model-input/label rows are counted but retained; equality does not prove a duplicate transaction",
+  "hypotheses": [
+    "All four sampled time partitions contain both classes",
+    "No time group crosses partition boundaries",
+    "Identifiers, labels and specified post-event fields are absent from predictors",
+    "Identical source files and sampling seed reproduce the cohort hashes"
+  ],
+  "training_groups": [
+    {
+      "group": 0,
+      "rows": 36256,
+      "positive": 386,
+      "negative": 35870
+    },
+    {
+      "group": 1,
+      "rows": 34919,
+      "positive": 334,
+      "negative": 34585
+    },
+    {
+      "group": 2,
+      "rows": 37434,
+      "positive": 325,
+      "negative": 37109
+    },
+    {
+      "group": 3,
+      "rows": 41391,
+      "positive": 416,
+      "negative": 40975
+    }
+  ],
+  "training_time_edges": [
+    1,
+    2,
+    3
+  ],
+  "uncertainty_cluster_counts": {
+    "published_time_group": 2
+  },
+  "holdout_status": "Consumed source; this experiment fits and scores training/validation only"
+}

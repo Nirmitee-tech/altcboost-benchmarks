@@ -1,0 +1,71 @@
+{
+  "primary_seed": 17,
+  "scope": "Training and validation only; frozen before calibration/test scoring",
+  "selected": {
+    "CatBoost_native": {
+      "family": "CatBoost_native",
+      "trial": 3,
+      "config": {
+        "depth": 8,
+        "positive_weight": 10.0
+      },
+      "resolved_positive_weight": 10.0,
+      "prefix": 100,
+      "validation_key": [
+        0.7344798657718121,
+        -0.0007441272832394699,
+        0.8675106681720767
+      ],
+      "fit_s": 2.877012863999994,
+      "selection_s": 3.9482898069999806
+    },
+    "XGBoost": {
+      "family": "XGBoost",
+      "trial": 3,
+      "config": {
+        "depth": 9,
+        "positive_weight": 5.0
+      },
+      "resolved_positive_weight": 5.0,
+      "prefix": 80,
+      "validation_key": [
+        0.7399328859060403,
+        -0.0007441272832394699,
+        0.8738402644481916
+      ],
+      "fit_s": 0.9007336060000171,
+      "selection_s": 1.8764257579999821
+    },
+    "LightGBM_native": {
+      "family": "LightGBM_native",
+      "trial": 0,
+      "config": {
+        "leaves": 15,
+        "positive_weight": 1.0
+      },
+      "resolved_positive_weight": 1.0,
+      "prefix": 1,
+      "validation_key": [
+        0.5536912751677853,
+        -0.0006424120430844343,
+        0.635072971055852
+      ],
+      "fit_s": 0.850128331999997,
+      "selection_s": 6.295834382999999
+    },
+    "V6": {
+      "family": "V6",
+      "config": "Frozen V6 settings; no hyperparameter search",
+      "prefix": 57,
+      "validation_key": [
+        0.7160234899328859,
+        -0.0007441272832394699,
+        0.89200633080671
+      ],
+      "fit_s": 36.719528362000005,
+      "selection_s": 0.0
+    }
+  },
+  "training_cohort": "72ee3c097751a7850a42f82d2b5b443b4d8c75a04a0a65dbc6aaabde212de093",
+  "validation_cohort": "33bea9fe34b374131b57a0b8aec62e4956d9e3f3e275cf54438ddfd109aa2e80"
+}

@@ -1,0 +1,159 @@
+{
+  "dataset": "sparkov",
+  "dataset_ref": "kartik2112/fraud-detection",
+  "dataset_kind": "synthetic card transactions generated with Sparkov",
+  "unit": "card-transaction row",
+  "source_url": "https://github.com/namebrandon/Sparkov_Data_Generation",
+  "licence": "CC0-1.0",
+  "observed_utc": "2026-11-13T02:42:50.093323+00:00",
+  "files": [
+    {
+      "name": "fraudTrain.csv",
+      "sha256": "fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d",
+      "rows": 1296675,
+      "positive": 7506,
+      "time_min": 1546300818000000000,
+      "time_max": 1592741617000000000
+    },
+    {
+      "name": "fraudTest.csv",
+      "sha256": "12d553ab19440c752d2531ee1af44bb64f12cc3d3839f1649f19e81c230545f0",
+      "rows": 555719,
+      "positive": 2145,
+      "time_min": 1592741665000000000,
+      "time_max": 1609459174000000000
+    }
+  ],
+  "source_rows": 1852394,
+  "partitions": {
+    "train": {
+      "source_rows": 908276,
+      "source_positive": 5121,
+      "sampled_rows": 150000,
+      "sampled_positive": 817,
+      "sampled_negative": 149183,
+      "time_min": 1546300851000000000,
+      "time_max": 1577560891000000000,
+      "cohort_sha256": "bec196feeffe066b782c186eca79d3f2022180facb483e7ea9acf04f53c4bc8b",
+      "equivalent_predictor_label_rows": 5
+    },
+    "validation": {
+      "source_rows": 194073,
+      "source_positive": 1253,
+      "sampled_rows": 100000,
+      "sampled_positive": 653,
+      "sampled_negative": 99347,
+      "time_min": 1577561014000000000,
+      "time_max": 1585943073000000000,
+      "cohort_sha256": "03fad280d0f4e1eb221bb822e97d9da4b09f74d5cc3c111721ecf5f7f5055a4d",
+      "equivalent_predictor_label_rows": 1
+    },
+    "calibration": {
+      "source_rows": 194326,
+      "source_positive": 1132,
+      "sampled_rows": 100000,
+      "sampled_positive": 591,
+      "sampled_negative": 99409,
+      "time_min": 1585943222000000000,
+      "time_max": 1592741617000000000,
+      "cohort_sha256": "bc1eb4c7d181e043e311af4fb5be97d0cb830caa3089772f2773de848ec8539d",
+      "equivalent_predictor_label_rows": 1
+    },
+    "test": {
+      "source_rows": 555719,
+      "source_positive": 2145,
+      "sampled_rows": 100000,
+      "sampled_positive": 378,
+      "sampled_negative": 99622,
+      "time_min": 1592741717000000000,
+      "time_max": 1609459149000000000,
+      "cohort_sha256": "85b2029a920c02fb8c678209e270d72f04eac38a25a7e6062183c150f3291706",
+      "equivalent_predictor_label_rows": 1
+    }
+  },
+  "time_edges": [
+    1577561014000000000,
+    1585943086000000000
+  ],
+  "time_unit": "nanoseconds since Unix epoch",
+  "raw_read_column_allowlist": [
+    "is_fraud",
+    "trans_date_trans_time",
+    "amt",
+    "city_pop",
+    "category",
+    "cc_num"
+  ],
+  "predictor_allowlist": [
+    "amt",
+    "city_pop",
+    "hour_of_day",
+    "day_of_week",
+    "category"
+  ],
+  "excluded_reason": "IDs, names, addresses, coordinates, birth dates and merchant identities are excluded; card ID is used only for overlap auditing",
+  "source_missing_predictor_values": {
+    "amt": 0,
+    "city_pop": 0,
+    "hour_of_day": 0,
+    "day_of_week": 0,
+    "category": 0
+  },
+  "entity_overlap": {
+    "scope": "sampled rows only",
+    "train_groups": 951,
+    "test_groups": 919,
+    "overlapping_groups": 908,
+    "ids_used_as_predictors": false
+  },
+  "scope": "Full-source metadata with capped, deterministic, label-blind temporal cohorts; no row export",
+  "sampling": {
+    "seed": 20261112,
+    "train_cap": 150000,
+    "eval_cap": 100000,
+    "method": "lowest stable hash priorities within each time partition"
+  },
+  "duplicate_policy": "Equal model-input/label rows are counted but retained; equality does not prove a duplicate transaction",
+  "hypotheses": [
+    "All four sampled time partitions contain both classes",
+    "No time group crosses partition boundaries",
+    "Identifiers, labels and specified post-event fields are absent from predictors",
+    "Identical source files and sampling seed reproduce the cohort hashes"
+  ],
+  "training_groups": [
+    {
+      "group": 0,
+      "rows": 37472,
+      "positive": 288,
+      "negative": 37184
+    },
+    {
+      "group": 1,
+      "rows": 37492,
+      "positive": 156,
+      "negative": 37336
+    },
+    {
+      "group": 2,
+      "rows": 37506,
+      "positive": 200,
+      "negative": 37306
+    },
+    {
+      "group": 3,
+      "rows": 37530,
+      "positive": 173,
+      "negative": 37357
+    }
+  ],
+  "training_time_edges": [
+    1556116040000000000,
+    1563650346000000000,
+    1571317153000000000
+  ],
+  "uncertainty_cluster_counts": {
+    "calendar_week": 29,
+    "card": 919
+  },
+  "holdout_status": "Consumed source; this experiment fits and scores training/validation only"
+}

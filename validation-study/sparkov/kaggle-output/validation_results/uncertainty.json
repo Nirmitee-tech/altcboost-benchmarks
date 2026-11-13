@@ -1,0 +1,398 @@
+[
+  {
+    "dataset": "sparkov",
+    "reference": "CatBoost_native",
+    "alpha": 0.0005,
+    "cluster_scheme": "calendar_week",
+    "cluster_count": 29,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.17989417989417988,
+    "observed_delta_fpr": 0.0,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      0.13498458612094977,
+      0.22599451004313534
+    ],
+    "delta_fpr_interval_95": [
+      -0.00013820864878434847,
+      0.00013761347796044534
+    ]
+  },
+  {
+    "dataset": "sparkov",
+    "reference": "CatBoost_native",
+    "alpha": 0.0005,
+    "cluster_scheme": "card",
+    "cluster_count": 919,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.17989417989417988,
+    "observed_delta_fpr": 0.0,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      0.1368674421893784,
+      0.22369026477236031
+    ],
+    "delta_fpr_interval_95": [
+      -0.0001375928129991922,
+      0.00014143584360087736
+    ]
+  },
+  {
+    "dataset": "sparkov",
+    "reference": "XGBoost",
+    "alpha": 0.0005,
+    "cluster_scheme": "calendar_week",
+    "cluster_count": 29,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.01851851851851849,
+    "observed_delta_fpr": 3.011383027845256e-05,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      -0.013193484664460919,
+      0.04728132387706856
+    ],
+    "delta_fpr_interval_95": [
+      -7.618374117535727e-05,
+      0.0001404868366893191
+    ]
+  },
+  {
+    "dataset": "sparkov",
+    "reference": "XGBoost",
+    "alpha": 0.0005,
+    "cluster_scheme": "card",
+    "cluster_count": 919,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.01851851851851849,
+    "observed_delta_fpr": 3.011383027845256e-05,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      -0.010127224828117972,
+      0.04683519017396464
+    ],
+    "delta_fpr_interval_95": [
+      -8.113123309981685e-05,
+      0.0001436461771831918
+    ]
+  },
+  {
+    "dataset": "sparkov",
+    "reference": "LightGBM_native",
+    "alpha": 0.0005,
+    "cluster_scheme": "calendar_week",
+    "cluster_count": 29,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.09259259259259262,
+    "observed_delta_fpr": 2.0075886852301706e-05,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      0.05494426094137077,
+      0.13043478260869565
+    ],
+    "delta_fpr_interval_95": [
+      -0.00010763918688175191,
+      0.00013952221910587537
+    ]
+  },
+  {
+    "dataset": "sparkov",
+    "reference": "LightGBM_native",
+    "alpha": 0.0005,
+    "cluster_scheme": "card",
+    "cluster_count": 919,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.09259259259259262,
+    "observed_delta_fpr": 2.0075886852301706e-05,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      0.05517051391659542,
+      0.13056403447428605
+    ],
+    "delta_fpr_interval_95": [
+      -0.00011932741359120373,
+      0.00016332705904149904
+    ]
+  },
+  {
+    "dataset": "sparkov",
+    "reference": "CatBoost_native",
+    "alpha": 0.001,
+    "cluster_scheme": "calendar_week",
+    "cluster_count": 29,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.18253968253968256,
+    "observed_delta_fpr": -8.030354740920682e-05,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      0.1459982290436836,
+      0.2207110402633508
+    ],
+    "delta_fpr_interval_95": [
+      -0.00025684597827769937,
+      0.00010358085255555344
+    ]
+  },
+  {
+    "dataset": "sparkov",
+    "reference": "CatBoost_native",
+    "alpha": 0.001,
+    "cluster_scheme": "card",
+    "cluster_count": 919,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.18253968253968256,
+    "observed_delta_fpr": -8.030354740920682e-05,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      0.1412421237727739,
+      0.2219179151061173
+    ],
+    "delta_fpr_interval_95": [
+      -0.00025294907074298166,
+      8.993739536806172e-05
+    ]
+  },
+  {
+    "dataset": "sparkov",
+    "reference": "XGBoost",
+    "alpha": 0.001,
+    "cluster_scheme": "calendar_week",
+    "cluster_count": 29,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.01851851851851849,
+    "observed_delta_fpr": -0.0002509485856537713,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      -0.008382255468232175,
+      0.04444881889763777
+    ],
+    "delta_fpr_interval_95": [
+      -0.00045442513715519497,
+      -6.444275407413417e-05
+    ]
+  },
+  {
+    "dataset": "sparkov",
+    "reference": "XGBoost",
+    "alpha": 0.001,
+    "cluster_scheme": "card",
+    "cluster_count": 919,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.01851851851851849,
+    "observed_delta_fpr": -0.0002509485856537713,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      -0.008002702702702702,
+      0.044580165123340544
+    ],
+    "delta_fpr_interval_95": [
+      -0.00042578441142044054,
+      -8.225832430448183e-05
+    ]
+  },
+  {
+    "dataset": "sparkov",
+    "reference": "LightGBM_native",
+    "alpha": 0.001,
+    "cluster_scheme": "calendar_week",
+    "cluster_count": 29,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.06613756613756616,
+    "observed_delta_fpr": -0.0003613659633414307,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      0.03178245014072572,
+      0.09749303621169916
+    ],
+    "delta_fpr_interval_95": [
+      -0.0005998815752592788,
+      -0.0001269379350135401
+    ]
+  },
+  {
+    "dataset": "sparkov",
+    "reference": "LightGBM_native",
+    "alpha": 0.001,
+    "cluster_scheme": "card",
+    "cluster_count": 919,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.06613756613756616,
+    "observed_delta_fpr": -0.0003613659633414307,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      0.03512740352292591,
+      0.09737986270022876
+    ],
+    "delta_fpr_interval_95": [
+      -0.0005666824213027174,
+      -0.0001544482343966915
+    ]
+  },
+  {
+    "dataset": "sparkov",
+    "reference": "CatBoost_native",
+    "alpha": 0.01,
+    "cluster_scheme": "calendar_week",
+    "cluster_count": 29,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.06878306878306883,
+    "observed_delta_fpr": -0.0006424283792736546,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      0.039473684210526314,
+      0.09775031960304215
+    ],
+    "delta_fpr_interval_95": [
+      -0.0012709425111467668,
+      1.0486892948596615e-05
+    ]
+  },
+  {
+    "dataset": "sparkov",
+    "reference": "CatBoost_native",
+    "alpha": 0.01,
+    "cluster_scheme": "card",
+    "cluster_count": 919,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.06878306878306883,
+    "observed_delta_fpr": -0.0006424283792736546,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      0.04221432065459073,
+      0.09686791383219953
+    ],
+    "delta_fpr_interval_95": [
+      -0.001295125210985092,
+      2.0880331413860676e-05
+    ]
+  },
+  {
+    "dataset": "sparkov",
+    "reference": "XGBoost",
+    "alpha": 0.01,
+    "cluster_scheme": "calendar_week",
+    "cluster_count": 29,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": -0.026455026455026398,
+    "observed_delta_fpr": -0.00036136596334142984,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      -0.050608535838268326,
+      -0.0030209205401667103
+    ],
+    "delta_fpr_interval_95": [
+      -0.0009151260467917692,
+      0.00016791150525397126
+    ]
+  },
+  {
+    "dataset": "sparkov",
+    "reference": "XGBoost",
+    "alpha": 0.01,
+    "cluster_scheme": "card",
+    "cluster_count": 919,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": -0.026455026455026398,
+    "observed_delta_fpr": -0.00036136596334142984,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      -0.04896962922249621,
+      -0.004474673348845697
+    ],
+    "delta_fpr_interval_95": [
+      -0.0009413586998172988,
+      0.00021130417496917098
+    ]
+  },
+  {
+    "dataset": "sparkov",
+    "reference": "LightGBM_native",
+    "alpha": 0.01,
+    "cluster_scheme": "calendar_week",
+    "cluster_count": 29,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.013227513227513255,
+    "observed_delta_fpr": -0.0005320110015859941,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      -0.005650117635761271,
+      0.03384745762711864
+    ],
+    "delta_fpr_interval_95": [
+      -0.0010536223378514273,
+      -5.3866932592237175e-05
+    ]
+  },
+  {
+    "dataset": "sparkov",
+    "reference": "LightGBM_native",
+    "alpha": 0.01,
+    "cluster_scheme": "card",
+    "cluster_count": 919,
+    "replicates_requested": 2000,
+    "min_clusters": 20,
+    "observed_delta_recall": 0.013227513227513255,
+    "observed_delta_fpr": -0.0005320110015859941,
+    "scope": "Conditional on selected models and calibration cutoffs. Resamples clusters, not training or calibration data. Percentile intervals; no multiplicity correction or general dependence guarantee.",
+    "status": "evaluated",
+    "valid_replicates": 2000,
+    "delta_recall_interval_95": [
+      -0.010561240177045569,
+      0.038272528891074464
+    ],
+    "delta_fpr_interval_95": [
+      -0.0011494306599447188,
+      9.472343270986953e-05
+    ]
+  }
+]
